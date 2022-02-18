@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', 'sans-serif';
+    --olive-color: rgb(72, 90, 53);
+}
+
+body, .content {
+    height: 100vh;
+}
+
+body {
+    background-image: url("https://th-thumbnailer.cdn-si-edu.com/XJFrDNlNhvtv1uH-U6FKdBJ_U2U=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/04/8e/048ed839-a581-48af-a0ae-fac6fec00948/gettyimages-168346757_web.jpg");
+}
+
+.content {
+    display: flex;
+}
+
+.left-cont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-cont {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10rem 0;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cont > h1, .left-cont > p {
+    color: white;
+}
+
+.logo-cont > h1 {
+    font-family: 'Bangers', 'sans-serif';
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.img-logo {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.left-cont > p {
+    padding: 1rem 0;
+}
+
+.right-cont {
+    background-color: rgb(241, 243, 247);
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-cont > p {
+    font-weight: bold;
+}
+
+.right-cont > :nth-child(-n + 2) {
+    padding: .4rem 8rem .4rem 2rem;
+}
+
+.form-bg,
+.create {
+    padding: 1rem 8rem 1.6rem 2rem;
+}
+
+.form-bg {
+    margin: 2rem 0 1rem;
+    background-color: white;
+    box-shadow: 0 3px 5px rgb(170, 170, 170) ;
+}
+
+.form-bg > p:first-child {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.input-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.2rem;
+    column-gap: 4rem;
+    padding-right: 3rem;
+}
+
+.input-boxes > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+input, button[type="submit"] {
+    border-radius: 4px;
+}
+
+input {
+    font-size: 1rem;
+    border: 1px solid rgb(170, 170, 170);
+    padding: .4rem;
+}
+
+.error {
+    border: 1px solid rgb(212, 0, 0);
+}
+
+.pwd-error {
+    color: rgb(212, 0, 0);
+    font-size: 0.8rem;
+}
+
+.focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+label {
+    font-size: 0.6rem;
+    color: rgb(83, 83, 83);
+}
+
+button[type="submit"] {
+    border: none;
+    box-shadow: 0 1px 3px grey;
+    background-color: var(--olive-color);
+    color: white;
+    padding: 0.8rem 3rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: var(--olive-color);
+    font-weight: bold;
+}
